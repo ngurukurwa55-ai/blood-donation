@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Register to become a blood donor. Join our community of life-savers and make a difference in someone's life."
+    />
+    <title>Become a Donor | BloodConnect - Register to Donate Blood</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar" role="navigation" aria-label="Main navigation">
+      <nav class="container nav-container">
+        <div class="nav-brand">
+          <a href="../index.html" class="brand-link">
+            <div class="brand-icon" aria-hidden="true">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 2C8 2 4 5 4 9c0 5 8 13 8 13s8-8 8-13c0-4-4-7-8-7z"
+                />
+                <path d="M9.1 9a3 3 0 0 1 5.8 0" />
+              </svg>
+            </div>
+            <span class="brand-text">BloodConnect</span>
+          </a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu" role="menubar">
+          <li class="nav-item" role="none">
+            <a href="../index.html" class="nav-link" role="menuitem">Home</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="learn.html" class="nav-link" role="menuitem">Learn</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="donate.html" class="nav-link" role="menuitem">Donate</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="need-blood.html" class="nav-link" role="menuitem"
+              >Need Blood</a
+            >
+          </li>
+          <li class="nav-item" role="none">
+            <a href="community.html" class="nav-link" role="menuitem"
+              >Community</a
+            >
+          </li>
+          <li class="nav-item" role="none">
+            <a href="about.html" class="nav-link" role="menuitem">About</a>
+          </li>
+          <li class="nav-item nav-actions" role="none">
+            <a href="#" class="btn btn-ghost btn-sm" role="menuitem">Log In</a>
+            <a
+              href="#"
+              class="btn btn-primary btn-sm"
+              role="menuitem"
+              aria-current="page"
+              >Become a Donor</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header" aria-labelledby="page-title">
+        <div class="container">
+          <div class="page-header-content">
+            <span class="page-badge">Register</span>
+            <h1 class="page-title" id="page-title">Become a Blood Donor</h1>
+            <p class="page-description">
+              Join thousands of life-savers in our community. Register today and
+              make a difference in someone's life.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Donor Benefits -->
+      <section class="section" aria-labelledby="benefits-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Why Donate</span>
+            <h2 class="section-title" id="benefits-title">
+              Benefits of Becoming a Donor
+            </h2>
+            <p class="section-description">
+              When you become a blood donor, you're not just giving blood —
+              you're giving hope.
+            </p>
+          </div>
+
+          <div class="matters-grid">
+            <article class="matter-card">
+              <div class="matter-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  />
+                </svg>
+              </div>
+              <h3 class="matter-title">Save Lives</h3>
+              <p class="matter-description">
+                One donation can save up to three lives. Your contribution makes
+                a real difference.
+              </p>
+            </article>
+
+            <article class="matter-card">
+              <div class="matter-icon matter-icon-secondary">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+              </div>
+              <h3 class="matter-title">Free Health Check</h3>
+              <p class="matter-description">
+                Get your blood pressure, pulse, and hemoglobin checked at every
+                donation.
+              </p>
+            </article>
+
+            <article class="matter-card">
+              <div class="matter-icon matter-icon-success">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <h3 class="matter-title">Community Impact</h3>
+              <p class="matter-description">
+                Be part of a life-saving community that supports patients in
+                need.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration Form -->
+      <section class="section section-alt" aria-labelledby="form-title">
+        <div class="container">
+          <div class="card donor-form-card">
+            <div class="card-header donor-form-header">
+              <h2 class="card-title">Donor Registration</h2>
+              <p class="card-description">
+                Complete the form below to register as a blood donor
+              </p>
+            </div>
+
+            <div class="card-body donor-form-body">
+              <!-- Form Progress -->
+              <div
+                class="form-progress"
+                role="progressbar"
+                aria-valuenow="1"
+                aria-valuemin="1"
+                aria-valuemax="3"
+                aria-label="Form progress"
+              >
+                <div class="progress-step active" data-step="1">
+                  <div class="step-circle">1</div>
+                  <span class="step-label">Personal Info</span>
+                </div>
+                <div class="progress-step" data-step="2">
+                  <div class="step-circle">2</div>
+                  <span class="step-label">Blood & Health</span>
+                </div>
+                <div class="progress-step" data-step="3">
+                  <div class="step-circle">3</div>
+                  <span class="step-label">Preferences</span>
+                </div>
+              </div>
+
+              <form id="donorForm" novalidate>
+                <!-- Step 1: Personal Information -->
+                <div class="form-step active" data-step="1">
+                  <h3 class="form-step-title">Personal Information</h3>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label class="form-label" for="firstName"
+                        >First Name <span class="required">*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="firstName"
+                        class="form-input"
+                        placeholder="Enter your first name"
+                        required
+                        aria-required="true"
+                      />
+                      <span class="form-error"
+                        >Please enter your first name</span
+                      >
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="lastName"
+                        >Last Name <span class="required">*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="lastName"
+                        class="form-input"
+                        placeholder="Enter your last name"
+                        required
+                        aria-required="true"
+                      />
+                      <span class="form-error"
+                        >Please enter your last name</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="email"
+                      >Email Address <span class="required">*</span></label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-input"
+                      placeholder="you@example.com"
+                      required
+                      aria-required="true"
+                    />
+                    <span class="form-error"
+                      >Please enter a valid email address</span
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="phone"
+                      >Phone Number <span class="required">*</span></label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="form-input"
+                      placeholder="+1 (555) 000-0000"
+                      required
+                      aria-required="true"
+                    />
+                    <span class="form-error"
+                      >Please enter a valid phone number</span
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="dob"
+                      >Date of Birth <span class="required">*</span></label
+                    >
+                    <input
+                      type="date"
+                      id="dob"
+                      class="form-input"
+                      required
+                      aria-required="true"
+                    />
+                    <span class="form-error"
+                      >Please enter your date of birth</span
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="gender"
+                      >Gender <span class="required">*</span></label
+                    >
+                    <select
+                      id="gender"
+                      class="form-select"
+                      required
+                      aria-required="true"
+                    >
+                      <option value="">Select your gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="non-binary">Non-binary</option>
+                      <option value="prefer-not">Prefer not to say</option>
+                    </select>
+                    <span class="form-error">Please select your gender</span>
+                  </div>
+
+                  <div class="form-actions">
+                    <span></span>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-next"
+                      data-next="2"
+                    >
+                      Next Step <span aria-hidden="true">→</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Step 2: Blood & Health Information -->
+                <div class="form-step" data-step="2">
+                  <h3 class="form-step-title">Blood & Health Information</h3>
+
+                  <div class="form-group">
+                    <label class="form-label"
+                      >Blood Group <span class="required">*</span></label
+                    >
+                    <div
+                      class="blood-group-options"
+                      id="bloodGroupOptions"
+                      role="radiogroup"
+                      aria-label="Blood group selection"
+                                        
+                      
+                        <input type="radio" name="bloodGroup" value="A+" />
+                        A+
+                      </label>
+                    
+                        
+                        A-
+                      </label>
+                     
+                       
+                        B+
+                      </label>
+                     
+                      
+                        B-
+                      </label>
+                     
+                      >
+                       
+                        AB+
+                      </label>
+                     
+                        
+                        AB-
+                      </label>
+                     
+                       
+                        O+
+                      </label>
+                    
+                       
+                        O-
+                      </label>
+                    </div>
+                    <span class="form-error"
+                      >Please select your blood group</span
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="weight"
+                      >Weight (kg) <span class="required">*</span></label
+                    >
+                    <input
+                      type="number"
+                      id="weight"
+                      class="form-input"
+                      placeholder="Enter your weight in kg"
+                      min="45"
+                      max="300"
+                      required
+                      aria-required="true"
+                    />
+                    <span class="form-error"
+                      >Please enter your weight (minimum 45 kg)</span
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="healthConditions"
+                      >Health Conditions</label
+                    >
+                    <select id="healthConditions" class="form-select">
+                      <option value="none">None</option>
+                      <option value="diabetes">Diabetes</option>
+                      <option value="hypertension">Hypertension</option>
+                      <option value="heart-disease">Heart Disease</option>
+                      <option value="asthma">Asthma</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="medications"
+                      >Current Medications</label
+                    >
+                    <input
+                      type="text"
+                      id="medications"
+                      class="form-input"
+                      placeholder="List any medications you're currently taking"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <input
+                        type="checkbox"
+                        id="donationConsent"
+                        required
+                        aria-required="true"
+                      />
+                      <label for="donationConsent">
+                        I confirm that I have read and understand the
+                        <a href="#">eligibility requirements</a> and confirm
+                        that I am eligible to donate blood to the best of my
+                        knowledge.
+                        <span class="required">*</span>
+                      </label>
+                    </div>
+                    <span class="form-error"
+                      >You must confirm your eligibility to donate</span
+                    >
+                  </div>
+
+                  <div class="form-actions">
+                    <button
+                      type="button"
+                      class="btn btn-outline btn-prev"
+                      data-prev="1"
+                    >
+                      <span aria-hidden="true">←</span> Previous
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-next"
+                      data-next="3"
+                    >
+                      Next Step <span aria-hidden="true">→</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Step 3: Preferences & Completion -->
+                <div class="form-step" data-step="3">
+                  <h3 class="form-step-title">Preferences & Complete</h3>
+
+                  <div class="form-group">
+                    <label class="form-label" for="preferredLocation"
+                      >Preferred Donation Location</label
+                    >
+                    <input
+                      type="text"
+                      id="preferredLocation"
+                      class="form-input"
+                      placeholder="City, state, or zip code"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="availability"
+                      >Best Time to Donate</label
+                    >
+                    <select id="availability" class="form-select">
+                      <option value="anytime">Anytime</option>
+                      <option value="morning">Morning (8am - 12pm)</option>
+                      <option value="afternoon">Afternoon (12pm - 4pm)</option>
+                      <option value="evening">Evening (4pm - 8pm)</option>
+                      <option value="weekdays">Weekdays Only</option>
+                      <option value="weekends">Weekends Only</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="preferredContact"
+                      >Preferred Contact Method</label
+                    >
+                    <select id="preferredContact" class="form-select">
+                      <option value="email">Email</option>
+                      <option value="phone">Phone</option>
+                      <option value="sms">SMS</option>
+                      <option value="any">Any</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <input type="checkbox" id="notifications" checked />
+                      <label for="notifications">
+                        I would like to receive notifications about upcoming
+                        blood drives and donation opportunities in my area.
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <input
+                        type="checkbox"
+                        id="termsConsent"
+                        required
+                        aria-required="true"
+                      />
+                      <label for="termsConsent">
+                        I agree to the <a href="#">Terms of Service</a> and
+                        <a href="#">Privacy Policy</a>.
+                        <span class="required">*</span>
+                      </label>
+                    </div>
+                    <span class="form-error"
+                      >You must agree to the terms to register</span
+                    >
+                  </div>
+
+                  <div class="form-actions">
+                    <button
+                      type="button"
+                      class="btn btn-outline btn-prev"
+                      data-prev="2"
+                    >
+                      <span aria-hidden="true">←</span> Previous
+                    </button>
+                    <button type="submit" class="btn btn-success btn-lg">
+                      Complete Registration
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Success Message -->
+              <div
+                id="successMessage"
+                class="donor-success"
+                
+              >
+                <div class="success-icon" aria-hidden="true">🎉</div>
+                <h3 class="success-title">Registration Complete!</h3>
+                <p class="success-description">
+                  Thank you for registering as a blood donor. You've taken the
+                  first step towards saving lives. We'll contact you with
+                  donation opportunities.
+                </p>
+                <div class="success-actions">
+                  <a href="../index.html" class="btn btn-primary"
+                    >Return Home</a
+                  >
+                  <a href="donate.html" class="btn btn-outline"
+                    >Find Donation Centers</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="section section-cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-box">
+            <div class="cta-content">
+              <h2 class="cta-title" id="cta-title">Already a Donor?</h2>
+              <p class="cta-description">
+                Log in to manage your profile, view your donation history, and
+                discover new opportunities.
+              </p>
+              <div class="cta-actions">
+                <a href="#" class="btn btn-primary btn-xl">Log In</a>
+                <a href="learn.html" class="btn btn-outline btn-xl"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-brand-link">
+              <div class="brand-icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2C8 2 4 5 4 9c0 5 8 13 8 13s8-8 8-13c0-4-4-7-8-7z"
+                  />
+                  <path d="M9.1 9a3 3 0 0 1 5.8 0" />
+                </svg>
+              </div>
+              <span class="brand-text">BloodConnect</span>
+            </div>
+            <p class="footer-description">
+              Connecting communities through safe, voluntary blood donation.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Platform</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Learn</h4>
+            <ul>
+              <li><a href="learn.html">Blood Basics</a></li>
+              <li><a href="learn.html#blood-groups">Blood Groups</a></li>
+              <li>
+                <a href="learn.html#donation-process">Donation Process</a>
+              </li>
+              <li><a href="learn.html#myths-facts">Myths & Facts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Get Involved</h4>
+            <ul>
+              <li><a href="become-donor.html">Become a Donor</a></li>
+              <li><a href="donate.html">Find Donation Centers</a></li>
+              <li><a href="community.html">Upcoming Campaigns</a></li>
+              <li><a href="#">Organization Registration</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Medical Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 BloodConnect. All rights reserved.</p>
+          <p>Making blood donation accessible for everyone.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        // DOM Elements
+        const steps = document.querySelectorAll(".form-step");
+        const progressSteps = document.querySelectorAll(".progress-step");
+        const form = document.getElementById("donorForm");
+        const successMessage = document.getElementById("successMessage");
+        const bloodOptions = document.querySelectorAll(".blood-group-option");
+
+        let currentStep = 1;
+
+        // Blood group selection with keyboard support
+        bloodOptions.forEach(function (option) {
+          // Click handler
+          option.addEventListener("click", function () {
+            selectBloodGroup(this);
+          });
+
+          // Keyboard support (Enter and Space)
+          option.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              selectBloodGroup(this);
+            }
+          });
+
+          // Radio change handler
+          const radio = option.querySelector('input[type="radio"]');
+          radio.addEventListener("change", function () {
+            if (this.checked) {
+              bloodOptions.forEach(function (opt) {
+                opt.classList.remove("selected");
+                opt.setAttribute("aria-checked", "false");
+              });
+              option.classList.add("selected");
+              option.setAttribute("aria-checked", "true");
+            }
+          });
+        });
+
+        function selectBloodGroup(option) {
+          const radio = option.querySelector('input[type="radio"]');
+          radio.checked = true;
+          // Trigger change event
+          const event = new Event("change", { bubbles: true });
+          radio.dispatchEvent(event);
+        }
+
+        // Navigation functions
+        function goToStep(step) {
+          if (step < 1 || step > 3) return;
+
+          currentStep = step;
+
+          // Update form steps
+          steps.forEach(function (s) {
+            const stepNum = parseInt(s.getAttribute("data-step"));
+            s.classList.remove("active");
+            if (stepNum === step) {
+              s.classList.add("active");
+            }
+          });
+
+          // Update progress
+          progressSteps.forEach(function (p) {
+            const stepNum = parseInt(p.getAttribute("data-step"));
+            p.classList.remove("active", "completed");
+            if (stepNum === step) {
+              p.classList.add("active");
+            } else if (stepNum < step) {
+              p.classList.add("completed");
+            }
+          });
+
+          // Update progress bar
+          const progressBar = document.querySelector(".form-progress");
+          progressBar.setAttribute("aria-valuenow", step);
+
+          // Scroll to top of form
+          document
+            .querySelector(".donor-form-card")
+            .scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        // Next button handlers
+        document.querySelectorAll(".btn-next").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const nextStep = parseInt(this.getAttribute("data-next"));
+            if (validateStep(currentStep)) {
+              goToStep(nextStep);
+            }
+          });
+        });
+
+        // Previous button handlers
+        document.querySelectorAll(".btn-prev").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const prevStep = parseInt(this.getAttribute("data-prev"));
+            goToStep(prevStep);
+          });
+        });
+
+        // Validation functions
+        function validateStep(step) {
+          let isValid = true;
+          const currentFormStep = document.querySelector(
+            '.form-step[data-step="' + step + '"]',
+          );
+
+          // Clear previous errors
+          currentFormStep
+            .querySelectorAll(".form-error")
+            .forEach(function (error) {
+              error.classList.remove("visible");
+            });
+          currentFormStep
+            .querySelectorAll(".form-input, .form-select")
+            .forEach(function (input) {
+              input.classList.remove("error");
+            });
+
+          if (step === 1) {
+            // Validate personal info
+            const firstName = document.getElementById("firstName");
+            const lastName = document.getElementById("lastName");
+            const email = document.getElementById("email");
+            const phone = document.getElementById("phone");
+            const dob = document.getElementById("dob");
+            const gender = document.getElementById("gender");
+
+            if (!firstName.value.trim()) {
+              showError(firstName, "Please enter your first name");
+              isValid = false;
+            }
+            if (!lastName.value.trim()) {
+              showError(lastName, "Please enter your last name");
+              isValid = false;
+            }
+            if (!email.value.trim() || !isValidEmail(email.value)) {
+              showError(email, "Please enter a valid email address");
+              isValid = false;
+            }
+            if (!phone.value.trim() || !isValidPhone(phone.value)) {
+              showError(phone, "Please enter a valid phone number");
+              isValid = false;
+            }
+            if (!dob.value) {
+              showError(dob, "Please enter your date of birth");
+              isValid = false;
+            }
+            if (!gender.value) {
+              showError(gender, "Please select your gender");
+              isValid = false;
+            }
+          }
+
+          if (step === 2) {
+            // Validate blood & health
+            const bloodSelected = document.querySelector(
+              'input[name="bloodGroup"]:checked',
+            );
+            const weight = document.getElementById("weight");
+            const consent = document.getElementById("donationConsent");
+
+            if (!bloodSelected) {
+              const error = document
+                .querySelector(".blood-group-options")
+                .parentElement.querySelector(".form-error");
+              if (error) error.classList.add("visible");
+              isValid = false;
+            }
+            if (!weight.value || parseInt(weight.value) < 45) {
+              showError(weight, "Please enter your weight (minimum 45 kg)");
+              isValid = false;
+            }
+            if (!consent.checked) {
+              const error = document
+                .getElementById("donationConsent")
+                .parentElement.parentElement.querySelector(".form-error");
+              if (error) error.classList.add("visible");
+              isValid = false;
+            }
+          }
+
+          if (step === 3) {
+            // Validate preferences
+            const terms = document.getElementById("termsConsent");
+            if (!terms.checked) {
+              const error = document
+                .getElementById("termsConsent")
+                .parentElement.parentElement.querySelector(".form-error");
+              if (error) error.classList.add("visible");
+              isValid = false;
+            }
+          }
+
+          return isValid;
+        }
+
+        function showError(input, message) {
+          input.classList.add("error");
+          const error = input.parentElement.querySelector(".form-error");
+          if (error) {
+            error.textContent = message;
+            error.classList.add("visible");
+          }
+        }
+
+        function isValidEmail(email) {
+          return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function isValidPhone(phone) {
+          return /^[+]?[\d\s\-()]{7,20}$/.test(phone);
+        }
+
+        // Form submission
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          if (validateStep(3)) {
+            // Hide form
+            form.style.display = "none";
+            // Show success message
+            successMessage.style.display = "block";
+            // Scroll to success message
+            document
+              .querySelector(".donor-form-card")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+
+        // Keyboard support for form navigation
+        document.addEventListener("keydown", function (e) {
+          // Only handle if inside the form
+          if (!form.contains(document.activeElement)) return;
+
+          if (e.key === "Enter") {
+            const activeElement = document.activeElement;
+            // If on a blood group option, trigger click
+            if (
+              activeElement.classList &&
+              activeElement.classList.contains("blood-group-option")
+            ) {
+              e.preventDefault();
+              activeElement.click();
+            }
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

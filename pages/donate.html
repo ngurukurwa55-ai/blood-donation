@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find blood donation centers near you. Search by location, see opening hours, and discover verified donation opportunities."
+    />
+    <title>Donate | BloodConnect - Find Donation Centers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar" role="navigation" aria-label="Main navigation">
+      <nav class="container nav-container">
+        <div class="nav-brand">
+          <a href="../index.html" class="brand-link">
+            <div class="brand-icon" aria-hidden="true">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 2C8 2 4 5 4 9c0 5 8 13 8 13s8-8 8-13c0-4-4-7-8-7z"
+                />
+                <path d="M9.1 9a3 3 0 0 1 5.8 0" />
+              </svg>
+            </div>
+            <span class="brand-text">BloodConnect</span>
+          </a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu" role="menubar">
+          <li class="nav-item" role="none">
+            <a href="../index.html" class="nav-link" role="menuitem">Home</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="learn.html" class="nav-link" role="menuitem">Learn</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="donate.html" class="nav-link active" role="menuitem"
+              >Donate</a
+            >
+          </li>
+          <li class="nav-item" role="none">
+            <a href="need-blood.html" class="nav-link" role="menuitem"
+              >Need Blood</a
+            >
+          </li>
+          <li class="nav-item" role="none">
+            <a href="community.html" class="nav-link" role="menuitem"
+              >Community</a
+            >
+          </li>
+          <li class="nav-item" role="none">
+            <a href="about.html" class="nav-link" role="menuitem">About</a>
+          </li>
+          <li class="nav-item nav-actions" role="none">
+            <a href="#" class="btn btn-ghost btn-sm" role="menuitem">Log In</a>
+            <a
+              href="become-donor.html"
+              class="btn btn-primary btn-sm"
+              role="menuitem"
+              >Become a Donor</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header" aria-labelledby="page-title">
+        <div class="container">
+          <div class="page-header-content">
+            <span class="page-badge">Find a Center</span>
+            <h1 class="page-title" id="page-title">Find a Donation Center</h1>
+            <p class="page-description">
+              Locate verified blood donation centers near you. Search by
+              location, view opening hours, and find the best time to donate.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search Section -->
+      <section class="section" aria-labelledby="search-title">
+        <div class="container">
+          <div class="search-section">
+            <div class="search-box">
+              <form class="search-form" id="centerSearch" role="search">
+                <div class="search-input-group">
+                  <svg
+                    class="search-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="M21 21l-4.35-4.35" />
+                  </svg>
+                  <input
+                    type="text"
+                    id="searchQuery"
+                    placeholder="Search by city, area, or center name..."
+                    class="search-input"
+                    aria-label="Search donation centers"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  id="useLocationBtn"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Use My Location
+                </button>
+                <button type="submit" class="btn btn-primary">Search</button>
+              </form>
+            </div>
+
+            <div class="filter-section">
+              <div class="filter-group">
+                <label for="filterBloodType" class="filter-label"
+                  >Blood Type</label
+                >
+                <select id="filterBloodType" class="filter-select">
+                  <option value="">All Types</option>
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="filterDistance" class="filter-label"
+                  >Distance</label
+                >
+                <select id="filterDistance" class="filter-select">
+                  <option value="10">Within 10 km</option>
+                  <option value="25" selected>Within 25 km</option>
+                  <option value="50">Within 50 km</option>
+                  <option value="100">Within 100 km</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div class="results-section">
+            <div class="results-header">
+              <span class="results-count" id="resultsCount"
+                >Showing 0 centers</span
+              >
+              <div class="results-view">
+                <button
+                  class="view-btn active"
+                  data-view="list"
+                  aria-label="List view"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="8" y1="6" x2="21" y2="6" />
+                    <line x1="8" y1="12" x2="21" y2="12" />
+                    <line x1="8" y1="18" x2="21" y2="18" />
+                    <line x1="3" y1="6" x2="3.01" y2="6" />
+                    <line x1="3" y1="12" x2="3.01" y2="12" />
+                    <line x1="3" y1="18" x2="3.01" y2="18" />
+                  </svg>
+                </button>
+                <button class="view-btn" data-view="map" aria-label="Map view">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polygon points="3 11 22 2 13 21 11 13 3 11" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState">
+              <div class="empty-icon">
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <h3 class="empty-title">No donation centers found</h3>
+              <p class="empty-description">
+                Try adjusting your search criteria or check back later for new
+                centers.
+              </p>
+              <button class="btn btn-primary" id="clearFilters">
+                Clear Filters
+              </button>
+            </div>
+
+            <!-- Results List -->
+            <div class="centers-list" id="centersList">
+              <!-- Centers will be rendered here by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="section section-cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-box">
+            <div class="cta-content">
+              <h2 class="cta-title" id="cta-title">
+                Ready to Make a Difference?
+              </h2>
+              <p class="cta-description">
+                Find a donation center near you and schedule your appointment
+                today. Every donation counts.
+              </p>
+              <div class="cta-actions">
+                <a href="become-donor.html" class="btn btn-primary btn-xl"
+                  >Become a Donor</a
+                >
+                <a href="learn.html" class="btn btn-outline btn-xl"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-brand-link">
+              <div class="brand-icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2C8 2 4 5 4 9c0 5 8 13 8 13s8-8 8-13c0-4-4-7-8-7z"
+                  />
+                  <path d="M9.1 9a3 3 0 0 1 5.8 0" />
+                </svg>
+              </div>
+              <span class="brand-text">BloodConnect</span>
+            </div>
+            <p class="footer-description">
+              Connecting communities through safe, voluntary blood donation.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Platform</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Learn</h4>
+            <ul>
+              <li><a href="learn.html">Blood Basics</a></li>
+              <li><a href="learn.html#blood-groups">Blood Groups</a></li>
+              <li>
+                <a href="learn.html#donation-process">Donation Process</a>
+              </li>
+              <li><a href="learn.html#myths-facts">Myths & Facts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Get Involved</h4>
+            <ul>
+              <li><a href="become-donor.html">Become a Donor</a></li>
+              <li><a href="donate.html">Find Donation Centers</a></li>
+              <li><a href="community.html">Upcoming Campaigns</a></li>
+              <li><a href="#">Organization Registration</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Medical Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 BloodConnect. All rights reserved.</p>
+          <p>Making blood donation accessible for everyone.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

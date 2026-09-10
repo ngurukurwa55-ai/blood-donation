@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Information about blood requests. Only verified healthcare organizations can submit blood requests through this platform."
+    />
+    <title>Need Blood | BloodConnect - Blood Requests</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar" role="navigation" aria-label="Main navigation">
+      <nav class="container nav-container">
+        <div class="nav-brand">
+          <a href="../index.html" class="brand-link">
+            <div class="brand-icon" aria-hidden="true">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 2C8 2 4 5 4 9c0 5 8 13 8 13s8-8 8-13c0-4-4-7-8-7z"
+                />
+                <path d="M9.1 9a3 3 0 0 1 5.8 0" />
+              </svg>
+            </div>
+            <span class="brand-text">BloodConnect</span>
+          </a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu" role="menubar">
+          <li class="nav-item" role="none">
+            <a href="../index.html" class="nav-link" role="menuitem">Home</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="learn.html" class="nav-link" role="menuitem">Learn</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="donate.html" class="nav-link" role="menuitem">Donate</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="need-blood.html" class="nav-link active" role="menuitem"
+              >Need Blood</a
+            >
+          </li>
+          <li class="nav-item" role="none">
+            <a href="community.html" class="nav-link" role="menuitem"
+              >Community</a
+            >
+          </li>
+          <li class="nav-item" role="none">
+            <a href="about.html" class="nav-link" role="menuitem">About</a>
+          </li>
+          <li class="nav-item nav-actions" role="none">
+            <a href="#" class="btn btn-ghost btn-sm" role="menuitem">Log In</a>
+            <a
+              href="become-donor.html"
+              class="btn btn-primary btn-sm"
+              role="menuitem"
+              >Become a Donor</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header" aria-labelledby="page-title">
+        <div class="container">
+          <div class="page-header-content">
+            <span class="page-badge">Blood Requests</span>
+            <h1 class="page-title" id="page-title">Need Blood?</h1>
+            <p class="page-description">
+              Blood requests must come through verified healthcare
+              organizations. If you or someone you know needs blood, please
+              contact a hospital or blood bank directly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Information Section -->
+      <section class="section" aria-labelledby="info-title">
+        <div class="container">
+          <div class="learn-section">
+            <div class="learn-section-header">
+              <span class="section-badge">Important Information</span>
+              <h2 class="section-title" id="info-title">
+                How Blood Requests Work
+              </h2>
+              <p class="section-description">
+                Understanding the process of requesting blood through authorized
+                channels.
+              </p>
+            </div>
+
+            <div class="content-grid">
+              <div class="content-main">
+                <div class="content-block">
+                  <h3>For Healthcare Organizations</h3>
+                  <p>
+                    If you are a verified healthcare organization, you can
+                    submit blood requests through this platform. All requests
+                    are reviewed before being made public.
+                  </p>
+                  <ul class="content-list">
+                    <li>Submit requests with blood type and quantity needed</li>
+                    <li>Specify urgency level and required date</li>
+                    <li>Track request status from submission to fulfillment</li>
+                    <li>Connect with registered donors in your area</li>
+                  </ul>
+                  <div class="content-note">
+                    <span class="note-icon">🏥</span>
+                    <p>
+                      <strong>Healthcare organizations:</strong>
+                      <a href="#">Register your organization</a>
+                      to start submitting verified blood requests.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="content-block">
+                  <h3>For Donors</h3>
+                  <p>
+                    Registered donors can view verified blood requests and
+                    choose to respond to opportunities that match their blood
+                    type and location.
+                  </p>
+                  <ul class="content-list">
+                    <li>
+                      View active blood requests from verified organizations
+                    </li>
+                    <li>Filter requests by blood type and location</li>
+                    <li>Express interest in responding to a request</li>
+                    <li>Receive notifications about matching opportunities</li>
+                  </ul>
+                </div>
+
+                <div class="disclaimer-box">
+                  <h4>Important Medical Disclaimer</h4>
+                  <p>
+                    This platform does not replace professional medical advice
+                    or emergency services. If you are experiencing a medical
+                    emergency, call emergency services immediately.
+                  </p>
+                  <p>
+                    Blood transfusion decisions must be made by qualified
+                    healthcare professionals using appropriate testing and
+                    procedures.
+                  </p>
+                  <p class="disclaimer-date">Last reviewed: January 2026</p>
+                </div>
+              </div>
+
+              <aside class="content-sidebar">
+                <div class="sidebar-card">
+                  <h4>Request Status Types</h4>
+                  <ul class="fact-list">
+                    <li>
+                      <span class="badge badge-muted">Pending</span>
+                      <span class="fact-label">Awaiting verification</span>
+                    </li>
+                    <li>
+                      <span class="badge badge-success">Verified</span>
+                      <span class="fact-label">Approved and active</span>
+                    </li>
+                    <li>
+                      <span class="badge badge-primary">Active</span>
+                      <span class="fact-label">Currently seeking donors</span>
+                    </li>
+                    <li>
+                      <span class="badge badge-success">Fulfilled</span>
+                      <span class="fact-label">Request completed</span>
+                    </li>
+                    <li>
+                      <span class="badge badge-warning">Expired</span>
+                      <span class="fact-label">No longer active</span>
+                    </li>
+                    <li>
+                      <span class="badge badge-danger">Cancelled</span>
+                      <span class="fact-label">Request withdrawn</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="sidebar-card">
+                  <h4>Quick Links</h4>
+                  <ul class="sidebar-links">
+                    <li><a href="donate.html">→ Find Donation Centers</a></li>
+                    <li>
+                      <a href="learn.html">→ Learn About Blood Donation</a>
+                    </li>
+                    <li><a href="#">→ Organization Registration</a></li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Active Requests Section (Empty State) -->
+      <section class="section section-alt" aria-labelledby="requests-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Current Needs</span>
+            <h2 class="section-title" id="requests-title">
+              Active Blood Requests
+            </h2>
+            <p class="section-description">
+              Verified blood requests from authorized healthcare organizations.
+            </p>
+          </div>
+
+          <div class="empty-state">
+            <div class="empty-icon">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 2C8 2 4 5 4 9c0 5 8 13 8 13s8-8 8-13c0-4-4-7-8-7z"
+                />
+                <path d="M9.1 9a3 3 0 0 1 5.8 0" />
+              </svg>
+            </div>
+            <h3 class="empty-title">No Active Blood Requests</h3>
+            <p class="empty-description">
+              There are currently no active blood requests. Check back later or
+              visit a donation center to contribute.
+            </p>
+            <div class="empty-state-actions">
+              <a href="donate.html" class="btn btn-primary"
+                >Find Donation Centers</a
+              >
+              <a href="learn.html" class="btn btn-outline"
+                >Learn About Donation</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-brand-link">
+              <div class="brand-icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2C8 2 4 5 4 9c0 5 8 13 8 13s8-8 8-13c0-4-4-7-8-7z"
+                  />
+                  <path d="M9.1 9a3 3 0 0 1 5.8 0" />
+                </svg>
+              </div>
+              <span class="brand-text">BloodConnect</span>
+            </div>
+            <p class="footer-description">
+              Connecting communities through safe, voluntary blood donation.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Platform</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Learn</h4>
+            <ul>
+              <li><a href="learn.html">Blood Basics</a></li>
+              <li><a href="learn.html#blood-groups">Blood Groups</a></li>
+              <li>
+                <a href="learn.html#donation-process">Donation Process</a>
+              </li>
+              <li><a href="learn.html#myths-facts">Myths & Facts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Get Involved</h4>
+            <ul>
+              <li><a href="become-donor.html">Become a Donor</a></li>
+              <li><a href="donate.html">Find Donation Centers</a></li>
+              <li><a href="community.html">Upcoming Campaigns</a></li>
+              <li><a href="#">Organization Registration</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Medical Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 BloodConnect. All rights reserved.</p>
+          <p>Making blood donation accessible for everyone.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

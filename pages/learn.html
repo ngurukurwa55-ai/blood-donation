@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about blood donation, blood groups, transfusion, safety, eligibility, and more. Educational resources for the community."
+    />
+    <title>Learn | BloodConnect - Blood Donation Education</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar" role="navigation" aria-label="Main navigation">
+      <nav class="container nav-container">
+        <div class="nav-brand">
+          <a href="../index.html" class="brand-link">
+            <div class="brand-icon" aria-hidden="true">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 2C8 2 4 5 4 9c0 5 8 13 8 13s8-8 8-13c0-4-4-7-8-7z"
+                />
+                <path d="M9.1 9a3 3 0 0 1 5.8 0" />
+              </svg>
+            </div>
+            <span class="brand-text">BloodConnect</span>
+          </a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu" role="menubar">
+          <li class="nav-item" role="none">
+            <a href="../index.html" class="nav-link" role="menuitem">Home</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="learn.html" class="nav-link active" role="menuitem"
+              >Learn</a
+            >
+          </li>
+          <li class="nav-item" role="none">
+            <a href="donate.html" class="nav-link" role="menuitem">Donate</a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="need-blood.html" class="nav-link" role="menuitem"
+              >Need Blood</a
+            >
+          </li>
+          <li class="nav-item" role="none">
+            <a href="community.html" class="nav-link" role="menuitem"
+              >Community</a
+            >
+          </li>
+          <li class="nav-item" role="none">
+            <a href="about.html" class="nav-link" role="menuitem">About</a>
+          </li>
+          <li class="nav-item nav-actions" role="none">
+            <a href="#" class="btn btn-ghost btn-sm" role="menuitem">Log In</a>
+            <a
+              href="become-donor.html"
+              class="btn btn-primary btn-sm"
+              role="menuitem"
+              >Become a Donor</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header" aria-labelledby="page-title">
+        <div class="container">
+          <div class="page-header-content">
+            <span class="page-badge">Education Center</span>
+            <h1 class="page-title" id="page-title">
+              Learn About Blood Donation
+            </h1>
+            <p class="page-description">
+              Understanding blood donation is the first step to making a
+              difference. Explore our comprehensive educational resources.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learning Navigation -->
+      <section class="section" aria-labelledby="learn-nav-title">
+        <div class="container">
+          <nav class="learn-nav" aria-label="Learning topics">
+            <ul class="learn-nav-list">
+              <li>
+                <a href="#blood-basics" class="learn-nav-link active"
+                  >Blood Basics</a
+                >
+              </li>
+              <li>
+                <a href="#blood-groups" class="learn-nav-link">Blood Groups</a>
+              </li>
+              <li>
+                <a href="#donation-process" class="learn-nav-link"
+                  >Donation Process</a
+                >
+              </li>
+              <li>
+                <a href="#myths-facts" class="learn-nav-link">Myths & Facts</a>
+              </li>
+              <li><a href="#faq" class="learn-nav-link">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Blood Basics -->
+      <section class="section" id="blood-basics" aria-labelledby="basics-title">
+        <div class="container">
+          <div class="learn-section">
+            <div class="learn-section-header">
+              <span class="section-badge">Start Here</span>
+              <h2 class="section-title" id="basics-title">Blood Basics</h2>
+              <p class="section-description">
+                Blood is essential for life. Learn what blood is made of and why
+                it's so important.
+              </p>
+            </div>
+
+            <div class="content-grid">
+              <div class="content-main">
+                <div class="content-block">
+                  <h3>What is Blood?</h3>
+                  <p>
+                    Blood is a specialized body fluid that delivers necessary
+                    substances to the body's cells — such as nutrients and
+                    oxygen — and transports waste products away from those same
+                    cells.
+                  </p>
+                  <p>Blood is made up of four main components:</p>
+                  <ul class="content-list">
+                    <li>
+                      <strong>Red Blood Cells</strong> — Carry oxygen from your
+                      lungs to the rest of your body.
+                    </li>
+                    <li>
+                      <strong>White Blood Cells</strong> — Help fight infections
+                      and are part of your immune system.
+                    </li>
+                    <li>
+                      <strong>Platelets</strong> — Help your blood clot when
+                      you're injured.
+                    </li>
+                    <li>
+                      <strong>Plasma</strong> — The liquid portion that carries
+                      nutrients, hormones, and proteins.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="content-block">
+                  <h3>Why Blood is Essential</h3>
+                  <p>Blood plays a critical role in maintaining life. It:</p>
+                  <ul class="content-list">
+                    <li>Delivers oxygen to tissues and organs</li>
+                    <li>Removes carbon dioxide and other waste products</li>
+                    <li>Transports nutrients and hormones</li>
+                    <li>Helps regulate body temperature</li>
+                    <li>
+                      Protects against infections through white blood cells and
+                      antibodies
+                    </li>
+                  </ul>
+                  <div class="content-note">
+                    <span class="note-icon">💡</span>
+                    <p>
+                      <strong>Did you know?</strong> The average adult has about
+                      1.2 gallons (5 liters) of blood in their body, making up
+                      about 7-8% of their total body weight.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="disclaimer-box">
+                  <h4>Medical Disclaimer</h4>
+                  <p>
+                    This educational content is for informational purposes only
+                    and is not a substitute for professional medical advice,
+                    diagnosis, or treatment. Always seek the advice of your
+                    physician or other qualified health provider with any
+                    questions you may have regarding a medical condition.
+                  </p>
+                  <p class="disclaimer-date">Last reviewed: January 2026</p>
+                </div>
+              </div>
+
+              <aside class="content-sidebar">
+                <div class="sidebar-card">
+                  <h4>Quick Facts</h4>
+                  <ul class="fact-list">
+                    <li>
+                      <span class="fact-number">5L</span>
+                      <span class="fact-label">Average blood volume</span>
+                    </li>
+                    <li>
+                      <span class="fact-number">120</span>
+                      <span class="fact-label"
+                        >Days (red blood cell lifespan)</span
+                      >
+                    </li>
+                    <li>
+                      <span class="fact-number">38°C</span>
+                      <span class="fact-label">Normal blood temperature</span>
+                    </li>
+                    <li>
+                      <span class="fact-number">7.4</span>
+                      <span class="fact-label">Average blood pH level</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="sidebar-card">
+                  <h4>Explore More</h4>
+                  <ul class="sidebar-links">
+                    <li>
+                      <a href="#blood-groups">→ Understanding Blood Groups</a>
+                    </li>
+                    <li>
+                      <a href="#donation-process">→ The Donation Process</a>
+                    </li>
+                    <li><a href="#faq">→ Frequently Asked Questions</a></li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blood Groups -->
+      <section
+        class="section section-alt"
+        id="blood-groups"
+        aria-labelledby="groups-title"
+      >
+        <div class="container">
+          <div class="learn-section">
+            <div class="learn-section-header">
+              <span class="section-badge">Blood Types</span>
+              <h2 class="section-title" id="groups-title">Blood Groups</h2>
+              <p class="section-description">
+                Understanding blood groups is crucial for safe transfusions.
+                Here's what you need to know.
+              </p>
+            </div>
+
+            <div class="blood-groups-detailed">
+              <div class="groups-intro">
+                <p>
+                  Your blood group is determined by the presence or absence of
+                  certain antigens (markers) on the surface of your red blood
+                  cells. The two most important blood group systems are the ABO
+                  system and the Rh system.
+                </p>
+                <p>
+                  The ABO system has four main blood groups: <strong>A</strong>,
+                  <strong>B</strong>, <strong>AB</strong>, and
+                  <strong>O</strong>. The Rh system determines whether your
+                  blood is positive (+) or negative (-).
+                </p>
+              </div>
+
+              <div class="groups-grid-detailed">
+                <div class="group-card-detailed">
+                  <div class="group-header">
+                    <span class="group-type">A+</span>
+                    <span class="group-frequency">Most Common</span>
+                  </div>
+                  <div class="group-body">
+                    <p>
+                      <strong>About:</strong> Approximately 30% of the
+                      population has A+ blood.
+                    </p>
+                    <div class="group-compat">
+                      <div class="compat-row">
+                        <span class="compat-label">Can Receive:</span>
+                        <span class="compat-value">A+, A-, O+, O-</span>
+                      </div>
+                      <div class="compat-row">
+                        <span class="compat-label">Can Donate To:</span>
+                        <span class="compat-value">A+, AB+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="group-card-detailed">
+                  <div class="group-header">
+                    <span class="group-type">A-</span>
+                    <span class="group-frequency">Rare</span>
+                  </div>
+                  <div class="group-body">
+                    <p>
+                      <strong>About:</strong> Approximately 6% of the population
+                      has A- blood.
+                    </p>
+                    <div class="group-compat">
+                      <div class="compat-row">
+                        <span class="compat-label">Can Receive:</span>
+                        <span class="compat-value">A-, O-</span>
+                      </div>
+                      <div class="compat-row">
+                        <span class="compat-label">Can Donate To:</span>
+                        <span class="compat-value">A+, A-, AB+, AB-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="group-card-detailed">
+                  <div class="group-header">
+                    <span class="group-type">B+</span>
+                    <span class="group-frequency">Common</span>
+                  </div>
+                  <div class="group-body">
+                    <p>
+                      <strong>About:</strong> Approximately 9% of the population
+                      has B+ blood.
+                    </p>
+                    <div class="group-compat">
+                      <div class="compat-row">
+                        <span class="compat-label">Can Receive:</span>
+                        <span class="compat-value">B+, B-, O+, O-</span>
+                      </div>
+                      <div class="compat-row">
+                        <span class="compat-label">Can Donate To:</span>
+                        <span class="compat-value">B+, AB+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="group-card-detailed">
+                  <div class="group-header">
+                    <span class="group-type">B-</span>
+                    <span class="group-frequency">Very Rare</span>
+                  </div>
+                  <div class="group-body">
+                    <p>
+                      <strong>About:</strong> Approximately 2% of the population
+                      has B- blood.
+                    </p>
+                    <div class="group-compat">
+                      <div class="compat-row">
+                        <span class="compat-label">Can Receive:</span>
+                        <span class="compat-value">B-, O-</span>
+                      </div>
+                      <div class="compat-row">
+                        <span class="compat-label">Can Donate To:</span>
+                        <span class="compat-value">B+, B-, AB+, AB-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="group-card-detailed">
+                  <div class="group-header">
+                    <span class="group-type">AB+</span>
+                    <span class="group-frequency">Universal Recipient</span>
+                  </div>
+                  <div class="group-body">
+                    <p>
+                      <strong>About:</strong> Approximately 4% of the population
+                      has AB+ blood.
+                    </p>
+                    <div class="group-compat">
+                      <div class="compat-row">
+                        <span class="compat-label">Can Receive:</span>
+                        <span class="compat-value">All blood types</span>
+                      </div>
+                      <div class="compat-row">
+                        <span class="compat-label">Can Donate To:</span>
+                        <span class="compat-value">AB+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="group-card-detailed">
+                  <div class="group-header">
+                    <span class="group-type">AB-</span>
+                    <span class="group-frequency">Rarest</span>
+                  </div>
+                  <div class="group-body">
+                    <p>
+                      <strong>About:</strong> Approximately 1% of the population
+                      has AB- blood.
+                    </p>
+                    <div class="group-compat">
+                      <div class="compat-row">
+                        <span class="compat-label">Can Receive:</span>
+                        <span class="compat-value">A-, B-, AB-, O-</span>
+                      </div>
+                      <div class="compat-row">
+                        <span class="compat-label">Can Donate To:</span>
+                        <span class="compat-value">AB+, AB-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="group-card-detailed">
+                  <div class="group-header">
+                    <span class="group-type">O+</span>
+                    <span class="group-frequency">Most Common</span>
+                  </div>
+                  <div class="group-body">
+                    <p>
+                      <strong>About:</strong> Approximately 37% of the
+                      population has O+ blood.
+                    </p>
+                    <div class="group-compat">
+                      <div class="compat-row">
+                        <span class="compat-label">Can Receive:</span>
+                        <span class="compat-value">O+, O-</span>
+                      </div>
+                      <div class="compat-row">
+                        <span class="compat-label">Can Donate To:</span>
+                        <span class="compat-value">A+, B+, AB+, O+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="group-card-detailed">
+                  <div class="group-header">
+                    <span class="group-type">O-</span>
+                    <span class="group-frequency">Universal Donor</span>
+                  </div>
+                  <div class="group-body">
+                    <p>
+                      <strong>About:</strong> Approximately 7% of the population
+                      has O- blood.
+                    </p>
+                    <div class="group-compat">
+                      <div class="compat-row">
+                        <span class="compat-label">Can Receive:</span>
+                        <span class="compat-value">O-</span>
+                      </div>
+                      <div class="compat-row">
+                        <span class="compat-label">Can Donate To:</span>
+                        <span class="compat-value">All blood types</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="important-note">
+                <div class="note-icon">⚠️</div>
+                <div class="note-content">
+                  <strong>Important:</strong> Actual transfusion compatibility
+                  must be determined by qualified healthcare professionals using
+                  appropriate testing and procedures. This information is for
+                  educational purposes only.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Donation Process -->
+      <section
+        class="section"
+        id="donation-process"
+        aria-labelledby="process-title"
+      >
+        <div class="container">
+          <div class="learn-section">
+            <div class="learn-section-header">
+              <span class="section-badge">How It Works</span>
+              <h2 class="section-title" id="process-title">
+                The Donation Process
+              </h2>
+              <p class="section-description">
+                Understanding what happens before, during, and after donation
+                can help you feel prepared.
+              </p>
+            </div>
+
+            <div class="process-timeline">
+              <div class="process-step">
+                <div class="step-indicator">
+                  <span class="step-number">1</span>
+                  <span class="step-line"></span>
+                </div>
+                <div class="step-content">
+                  <h3>Prepare</h3>
+                  <ul>
+                    <li>Eat a healthy meal and drink plenty of water</li>
+                    <li>Get a good night's sleep</li>
+                    <li>Bring your ID and any required documentation</li>
+                    <li>
+                      Wear comfortable clothing with sleeves that can be rolled
+                      up
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="process-step">
+                <div class="step-indicator">
+                  <span class="step-number">2</span>
+                  <span class="step-line"></span>
+                </div>
+                <div class="step-content">
+                  <h3>Screen</h3>
+                  <ul>
+                    <li>Register and provide basic information</li>
+                    <li>Complete a health history questionnaire</li>
+                    <li>
+                      Get a mini-physical (temperature, blood pressure, pulse)
+                    </li>
+                    <li>Receive a quick hemoglobin test (finger prick)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="process-step">
+                <div class="step-indicator">
+                  <span class="step-number">3</span>
+                  <span class="step-line"></span>
+                </div>
+                <div class="step-content">
+                  <h3>Donate</h3>
+                  <ul>
+                    <li>Relax in a comfortable donation chair</li>
+                    <li>
+                      A phlebotomist will clean the area and insert a sterile
+                      needle
+                    </li>
+                    <li>The donation takes approximately 8-10 minutes</li>
+                    <li>About 1 pint (470 ml) of blood is collected</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="process-step">
+                <div class="step-indicator">
+                  <span class="step-number">4</span>
+                  <span class="step-line"></span>
+                </div>
+                <div class="step-content">
+                  <h3>Recover</h3>
+                  <ul>
+                    <li>Rest for 10-15 minutes after donation</li>
+                    <li>Enjoy refreshments (juice, snacks)</li>
+                    <li>Drink extra fluids for the next 24-48 hours</li>
+                    <li>Avoid heavy lifting for the rest of the day</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Myths & Facts -->
+      <section
+        class="section section-alt"
+        id="myths-facts"
+        aria-labelledby="myths-title"
+      >
+        <div class="container">
+          <div class="learn-section">
+            <div class="learn-section-header">
+              <span class="section-badge">Myths & Facts</span>
+              <h2 class="section-title" id="myths-title">
+                Common Misconceptions
+              </h2>
+              <p class="section-description">
+                There are many myths about blood donation. Let's set the record
+                straight.
+              </p>
+            </div>
+
+            <div class="myths-grid">
+              <div class="myth-card">
+                <div class="myth-header">
+                  <span class="myth-icon">❌</span>
+                  <span class="myth-label">Myth</span>
+                </div>
+                <p class="myth-text">"Blood donation makes you weak."</p>
+                <div class="fact-content">
+                  <span class="fact-icon">✅</span>
+                  <span class="fact-label">Fact</span>
+                  <p>
+                    The body quickly replenishes the fluids lost during
+                    donation. Most donors feel fine afterward and can resume
+                    normal activities within a few hours.
+                  </p>
+                </div>
+              </div>
+
+              <div class="myth-card">
+                <div class="myth-header">
+                  <span class="myth-icon">❌</span>
+                  <span class="myth-label">Myth</span>
+                </div>
+                <p class="myth-text">
+                  "You can't donate if you have tattoos or piercings."
+                </p>
+                <div class="fact-content">
+                  <span class="fact-icon">✅</span>
+                  <span class="fact-label">Fact</span>
+                  <p>
+                    In most regions, you can donate if your tattoo or piercing
+                    was done at a licensed facility with sterile equipment.
+                    There may be a waiting period depending on local
+                    regulations.
+                  </p>
+                </div>
+              </div>
+
+              <div class="myth-card">
+                <div class="myth-header">
+                  <span class="myth-icon">❌</span>
+                  <span class="myth-label">Myth</span>
+                </div>
+                <p class="myth-text">"Blood donation is painful."</p>
+                <div class="fact-content">
+                  <span class="fact-icon">✅</span>
+                  <span class="fact-label">Fact</span>
+                  <p>
+                    You may feel a brief pinch when the needle is inserted, but
+                    the process itself is generally painless. The staff are
+                    trained to make the experience as comfortable as possible.
+                  </p>
+                </div>
+              </div>
+
+              <div class="myth-card">
+                <div class="myth-header">
+                  <span class="myth-icon">❌</span>
+                  <span class="myth-label">Myth</span>
+                </div>
+                <p class="myth-text">
+                  "You can't donate blood if you're on medication."
+                </p>
+                <div class="fact-content">
+                  <span class="fact-icon">✅</span>
+                  <span class="fact-label">Fact</span>
+                  <p>
+                    Many medications do not disqualify you from donating.
+                    However, some medications may require a waiting period.
+                    Always check with the donation center about your specific
+                    medications.
+                  </p>
+                </div>
+              </div>
+
+              <div class="myth-card">
+                <div class="myth-header">
+                  <span class="myth-icon">❌</span>
+                  <span class="myth-label">Myth</span>
+                </div>
+                <p class="myth-text">"Blood donation takes a long time."</p>
+                <div class="fact-content">
+                  <span class="fact-icon">✅</span>
+                  <span class="fact-label">Fact</span>
+                  <p>
+                    The actual donation only takes about 8-10 minutes. The
+                    entire process, including registration, screening, and
+                    recovery, takes approximately 45 minutes to an hour.
+                  </p>
+                </div>
+              </div>
+
+              <div class="myth-card">
+                <div class="myth-header">
+                  <span class="myth-icon">❌</span>
+                  <span class="myth-label">Myth</span>
+                </div>
+                <p class="myth-text">"O-negative blood is always available."</p>
+                <div class="fact-content">
+                  <span class="fact-icon">✅</span>
+                  <span class="fact-label">Fact</span>
+                  <p>
+                    O-negative blood is the universal donor type and is always
+                    in high demand. Supplies can run low, which is why regular
+                    donations from O-negative donors are so important.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Frequently Asked Questions -->
+      <section class="section" id="faq" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="learn-section">
+            <div class="learn-section-header">
+              <span class="section-badge">Questions?</span>
+              <h2 class="section-title" id="faq-title">
+                Frequently Asked Questions
+              </h2>
+              <p class="section-description">
+                Quick answers to the most common questions about blood donation.
+              </p>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  Who can donate blood?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Most healthy adults aged 17-65 (or 16 with parental consent
+                    in some regions) who weigh at least 50 kg (110 lbs) and are
+                    in good general health can donate. Specific eligibility
+                    criteria vary by location and donation center. Final
+                    eligibility is determined during the screening process at
+                    the donation center.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  How often can I donate?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Whole blood can be donated every 56 days (approximately 6-8
+                    times per year). Platelet donations can be made more
+                    frequently, typically every 7-14 days. Always follow the
+                    guidance of the donation center.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  What should I eat before donating?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Eat a healthy meal rich in iron (like lean red meat,
+                    spinach, or beans) and drink plenty of fluids. Avoid fatty
+                    foods, as they can affect blood test results. Stay hydrated
+                    by drinking water, juice, or sports drinks.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  Is blood donation safe?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Yes, blood donation is very safe. The procedure uses
+                    sterile, single-use equipment, so there's no risk of
+                    infection. Every donor receives a health screening, and the
+                    staff are trained professionals who follow strict safety
+                    protocols.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  What happens to my blood after donation?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Your blood is tested for blood type and various infections.
+                    It's then separated into components (red cells, plasma,
+                    platelets) that can help up to three different patients. The
+                    components are stored and distributed to hospitals where
+                    they're needed.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  Can I donate if I'm pregnant or recently had a baby?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Generally, you cannot donate during pregnancy or for a
+                    period after giving birth (typically 6 months). This is to
+                    protect both you and the baby. Check with your local
+                    donation center for specific guidelines.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-brand-link">
+              <div class="brand-icon" aria-hidden="true">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2C8 2 4 5 4 9c0 5 8 13 8 13s8-8 8-13c0-4-4-7-8-7z"
+                  />
+                  <path d="M9.1 9a3 3 0 0 1 5.8 0" />
+                </svg>
+              </div>
+              <span class="brand-text">BloodConnect</span>
+            </div>
+            <p class="footer-description">
+              Connecting communities through safe, voluntary blood donation.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Platform</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Learn</h4>
+            <ul>
+              <li><a href="learn.html">Blood Basics</a></li>
+              <li><a href="learn.html#blood-groups">Blood Groups</a></li>
+              <li>
+                <a href="learn.html#donation-process">Donation Process</a>
+              </li>
+              <li><a href="learn.html#myths-facts">Myths & Facts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Get Involved</h4>
+            <ul>
+              <li><a href="become-donor.html">Become a Donor</a></li>
+              <li><a href="donate.html">Find Donation Centers</a></li>
+              <li><a href="community.html">Upcoming Campaigns</a></li>
+              <li><a href="#">Organization Registration</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Medical Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 BloodConnect. All rights reserved.</p>
+          <p>Making blood donation accessible for everyone.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
