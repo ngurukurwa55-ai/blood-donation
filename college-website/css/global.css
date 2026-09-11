@@ -7,10 +7,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
   font-family: var(--font-primary);
   font-size: var(--font-size-base);
   line-height: 1.6;
@@ -22,10 +25,54 @@ body {
 img,
 svg,
 video,
-canvas {
+canvas,
+iframe {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* Keep content inside its grid or flex column on very narrow screens. */
+.container,
+.header-inner,
+.footer-grid,
+.quick-access-grid,
+.programs-grid,
+.why-grid,
+.news-grid,
+.contact-grid,
+.steps-grid,
+.mv-grid,
+.info-grid,
+.activities-grid,
+.orgs-grid,
+.support-grid,
+.events-grid,
+.gallery-grid,
+.dates-grid,
+.form-row {
+  min-width: 0;
+}
+
+.feature-item,
+.stat-item,
+.quick-access-card,
+.why-item,
+.mv-card,
+.info-item,
+.requirement-item,
+.step,
+.date-item,
+.event-card,
+.campus-info-item,
+.activity-card,
+.org-card,
+.support-item,
+.program-card,
+.news-card,
+.card-content {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .visual-panel,
@@ -613,17 +660,37 @@ select {
 
 @media (max-width: 767px) {
   h1 {
-    font-size: var(--font-size-3xl);
+    font-size: clamp(2rem, 9vw, var(--font-size-3xl));
   }
 
   h2 {
-    font-size: var(--font-size-2xl);
+    font-size: clamp(1.5rem, 7vw, var(--font-size-2xl));
   }
 
   .page-hero,
   .section,
   .cta-section {
     padding: var(--spacing-2xl) 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .filter-wrapper {
+    justify-content: stretch;
+  }
+
+  .filter-btn {
+    flex: 1 1 130px;
+  }
+
+  .faq-question {
+    gap: var(--spacing-md);
+  }
+
+  .news-date {
+    position: static;
+    display: inline-block;
+    margin: 0 var(--spacing-md) var(--spacing-md);
   }
 }
 
@@ -638,6 +705,7 @@ select {
 
   .logo-sub {
     font-size: 0.6rem;
+    letter-spacing: 0;
   }
 
   .header {
