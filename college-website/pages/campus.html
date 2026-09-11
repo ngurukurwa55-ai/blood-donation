@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Campus & Gallery - SACOHAS College of Health and Allied Sciences
+    </title>
+    <meta
+      name="description"
+      content="Explore the SACOHAS College campus, facilities, and image gallery. See our learning environments and campus community."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="header" role="banner" data-site-header></header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Page Hero -->
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="container">
+          <h1 id="page-title">Campus &amp; Gallery</h1>
+          <div class="gold-line"></div>
+          <p class="page-subtitle">
+            Explore our campus facilities and learning environments
+          </p>
+        </div>
+      </section>
+
+      <!-- Campus Information -->
+      <section class="section" aria-labelledby="campus-title">
+        <div class="container">
+          <h2 id="campus-title">Our Campus</h2>
+          <div class="campus-info-grid">
+            <div class="campus-info-item">
+              <h3>📍 Location</h3>
+              <p>Tanzania</p>
+            </div>
+            <div class="campus-info-item">
+              <h3>🏗️ Modern Facilities</h3>
+              <p>
+                Our campus features modern learning facilities designed to
+                support effective health education.
+              </p>
+            </div>
+            <div class="campus-info-item">
+              <h3>📚 Learning Environment</h3>
+              <p>
+                A supportive and engaging learning environment that fosters
+                academic excellence.
+              </p>
+            </div>
+            <div class="campus-info-item">
+              <h3>👥 Student Community</h3>
+              <p>
+                A vibrant community of learners committed to health education
+                and professional growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="section bg-light" aria-labelledby="gallery-title">
+        <div class="container">
+          <h2 id="gallery-title">Gallery</h2>
+          <p class="section-subtitle">Take a visual tour of our campus</p>
+          <div class="gallery-grid" id="galleryGrid">
+            <button
+              class="gallery-item"
+              data-index="0"
+              aria-label="View image: Main Campus Building"
+            >
+              <div class="gallery-thumb">
+                <div class="thumb-placeholder">
+                  <span>🏛️</span>
+                </div>
+                <span class="gallery-caption">Main Campus Building</span>
+              </div>
+            </button>
+            <button
+              class="gallery-item"
+              data-index="1"
+              aria-label="View image: Modern Lecture Hall"
+            >
+              <div class="gallery-thumb">
+                <div class="thumb-placeholder">
+                  <span>🏫</span>
+                </div>
+                <span class="gallery-caption">Modern Lecture Hall</span>
+              </div>
+            </button>
+            <button
+              class="gallery-item"
+              data-index="2"
+              aria-label="View image: Practical Laboratory"
+            >
+              <div class="gallery-thumb">
+                <div class="thumb-placeholder">
+                  <span>🔬</span>
+                </div>
+                <span class="gallery-caption">Practical Laboratory</span>
+              </div>
+            </button>
+            <button
+              class="gallery-item"
+              data-index="3"
+              aria-label="View image: Student Common Area"
+            >
+              <div class="gallery-thumb">
+                <div class="thumb-placeholder">
+                  <span>🛋️</span>
+                </div>
+                <span class="gallery-caption">Student Common Area</span>
+              </div>
+            </button>
+            <button
+              class="gallery-item"
+              data-index="4"
+              aria-label="View image: Campus Library"
+            >
+              <div class="gallery-thumb">
+                <div class="thumb-placeholder">
+                  <span>📚</span>
+                </div>
+                <span class="gallery-caption">Campus Library</span>
+              </div>
+            </button>
+            <button
+              class="gallery-item"
+              data-index="5"
+              aria-label="View image: Student Life Activities"
+            >
+              <div class="gallery-thumb">
+                <div class="thumb-placeholder">
+                  <span>🎓</span>
+                </div>
+                <span class="gallery-caption">Student Life Activities</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox -->
+      <div
+        class="lightbox"
+        id="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Image viewer"
+      >
+        <div class="lightbox-overlay" id="lightboxOverlay"></div>
+        <div class="lightbox-content">
+          <button
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Close image viewer"
+          >
+            &times;
+          </button>
+          <button
+            class="lightbox-prev"
+            id="lightboxPrev"
+            aria-label="Previous image"
+          >
+            ‹
+          </button>
+          <button
+            class="lightbox-next"
+            id="lightboxNext"
+            aria-label="Next image"
+          >
+            ›
+          </button>
+          <div class="lightbox-image-container">
+            <div class="lightbox-image-placeholder">
+              <span id="lightboxIcon">🏛️</span>
+            </div>
+            <p class="lightbox-caption" id="lightboxCaption">
+              Main Campus Building
+            </p>
+            <span class="lightbox-counter" id="lightboxCounter">1 / 6</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" role="contentinfo" data-site-footer></footer>
+    <script src="../data/college.js"></script>
+    <script src="../js/components.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Academic Programs - SACOHAS College of Health and Allied Sciences
+    </title>
+    <meta
+      name="description"
+      content="Explore academic programs at SACOHAS College of Health and Allied Sciences."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="header" role="banner" data-site-header></header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Page Hero -->
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="container">
+          <h1 id="page-title">Academic Programs</h1>
+          <div class="gold-line"></div>
+          <p class="page-subtitle">
+            Professional health education programs designed for your career
+            success
+          </p>
+        </div>
+      </section>
+
+      <!-- Programs Section -->
+      <section class="section" aria-labelledby="programs-title">
+        <div class="container">
+          <!-- Search and Filter -->
+          <div class="programs-toolbar">
+            <div class="search-wrapper">
+              <input
+                type="text"
+                id="programSearch"
+                placeholder="Search programs..."
+                aria-label="Search programs"
+                class="search-input"
+              />
+            </div>
+            <div
+              class="filter-wrapper"
+              role="group"
+              aria-label="Program categories"
+            >
+              <button
+                class="filter-btn active"
+                data-category="all"
+                aria-pressed="true"
+              >
+                All Programs
+              </button>
+              <button
+                class="filter-btn"
+                data-category="clinical"
+                aria-pressed="false"
+              >
+                Clinical
+              </button>
+              <button
+                class="filter-btn"
+                data-category="nursing"
+                aria-pressed="false"
+              >
+                Nursing
+              </button>
+              <button
+                class="filter-btn"
+                data-category="public-health"
+                aria-pressed="false"
+              >
+                Public Health
+              </button>
+              <button
+                class="filter-btn"
+                data-category="pharmacy"
+                aria-pressed="false"
+              >
+                Pharmacy
+              </button>
+              <button
+                class="filter-btn"
+                data-category="laboratory"
+                aria-pressed="false"
+              >
+                Laboratory
+              </button>
+              <button
+                class="filter-btn"
+                data-category="informatics"
+                aria-pressed="false"
+              >
+                Informatics
+              </button>
+            </div>
+            <div class="programs-count" aria-live="polite">
+              <span id="programCount">6</span> programs found
+            </div>
+          </div>
+
+          <!-- Programs Grid -->
+          <div class="programs-grid" id="programsGrid">
+            <!-- Programs will be rendered here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Program Details Modal -->
+      <div
+        class="modal"
+        id="programModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+          <button
+            class="modal-close"
+            id="modalClose"
+            aria-label="Close program details"
+          >
+            &times;
+          </button>
+          <div class="modal-body" id="modalBody"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" role="contentinfo" data-site-footer></footer>
+
+    <script src="../data/college.js"></script>
+    <script src="../js/components.js"></script>
+    <script src="../js/programs.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

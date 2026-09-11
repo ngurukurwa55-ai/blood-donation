@@ -1,0 +1,53 @@
+/* SACOHAS design tokens */
+:root {
+  --color-white: #ffffff;
+  --color-navy-blue: #0b1f3a;
+  --color-light-grey: #f3f4f6;
+  --color-dark-grey: #1f2937;
+  --color-gold: #d4af37;
+  --color-mid-grey: #6b7280;
+
+  --white: var(--color-white);
+  --navy: var(--color-navy-blue);
+  --light-gray: var(--color-light-grey);
+  --dark-gray: var(--color-dark-grey);
+  --medium-gray: var(--color-mid-grey);
+  --gold: var(--color-gold);
+
+  --font-primary:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3rem;
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 5rem;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.875rem;
+
+  --shadow-sm: 0 1px 3px rgba(11, 31, 58, 0.08);
+  --shadow-md: 0 4px 12px rgba(11, 31, 58, 0.1);
+  --shadow-lg: 0 8px 30px rgba(11, 31, 58, 0.14);
+  --shadow-xl: 0 20px 50px rgba(11, 31, 58, 0.16);
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  --container-max: 1200px;
+  --container-padding: 1.5rem;
+}
